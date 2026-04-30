@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mastering SQL Complex Queries | Presentation</title>
+    <meta name="description" content="Presentasi profesional mengenai penguasaan SQL Complex Queries untuk analisis data tingkat lanjut.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- Prism.js for advanced syntax highlighting -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="dark-theme">
+    <div class="app-container">
+        <div class="background-blobs">
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2"></div>
+            <div class="blob blob-3"></div>
+        </div>
+
+        <nav class="presentation-nav">
+            <div class="nav-left">
+                <span class="logo">SQL<span class="accent">Mastery</span></span>
+            </div>
+            <div class="nav-right">
+                <div class="nav-controls">
+                    <button id="theme-toggle" class="icon-btn" title="Toggle Theme">
+                        <i data-lucide="moon"></i>
+                    </button>
+                    <button id="fullscreen-btn" class="icon-btn" title="Mode Layar Penuh">
+                        <i data-lucide="maximize"></i>
+                    </button>
+                    <button id="print-btn" class="icon-btn" title="Print to PDF">
+                        <i data-lucide="printer"></i>
+                    </button>
+                    <span id="slide-counter">1 / 14</span>
+                    <button id="menu-btn" class="icon-btn" aria-label="Menu Slide">
+                        <i data-lucide="layout-grid"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <div id="slide-menu" class="menu-overlay">
+            <div class="menu-content">
+                <div class="menu-header">
+                    <h2>Pilih Slide</h2>
+                    <button id="close-menu" class="icon-btn"><i data-lucide="x"></i></button>
+                </div>
+                <div id="menu-grid" class="menu-grid">
+                    <!-- Items injected by JS -->
+                </div>
+            </div>
+        </div>
+
+        <main class="presentation-viewport">
+            <div id="slides-container" class="slides-container">
+                <!-- Slides will be injected here -->
+            </div>
+        </main>
+
+        <footer class="presentation-footer">
+            <div class="progress-container">
+                <div id="progress-bar" class="progress-bar"></div>
+            </div>
+            <div class="controls">
+                <button id="prev-btn" class="control-btn" aria-label="Slide Sebelumnya">
+                    <i data-lucide="chevron-left"></i>
+                </button>
+                <div class="control-hints">
+                    <span>Gunakan tombol panah &larr; &rarr;</span>
+                </div>
+                <button id="next-btn" class="control-btn" aria-label="Slide Selanjutnya">
+                    <i data-lucide="chevron-right"></i>
+                </button>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-sql.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
